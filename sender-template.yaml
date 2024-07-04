@@ -1,7 +1,7 @@
 global:
   scrape_interval: 5s
   external_labels:
-    role: ${SENDER_NAME}
+    replica: ${SENDER_NAME}
 
 remote_write:
     - url: 'http://localhost:${REMOTE_WRITE_PORT}/api/v1/write'
